@@ -10,7 +10,8 @@ body {
 }
 main {
     width: 80%;
-    margin: auto;
+    margin: 10px;
+    text-align: center;
 }
 h1 {
     margin: 5px 10px 5px 20px;
@@ -51,17 +52,16 @@ h3 {
     padding: 10px 20px 10px 20px;
     margin: 5px;
 }
-section p {
-    float: right;
-    margin: 1em;
+section {
+    height: 100vh;
+    border-bottom: 1px solid #fff;
 }
 .section-head {
     font-size: 2em;
     margin: 5px;
     float: left;
 }
-#work {
-    clear: both;
+
 }
 #work-links {
     display: flex;
