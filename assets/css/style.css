@@ -1,110 +1,47 @@
-:root {
-    --main-color: #333333;
+:root{
     --text-color: #fff;
-    --link-color: beige;
-    --secondary-color: orange;
+    --highlight-color: #668800;
 }
-body {
-    background-color: var(--main-color);
-    color: var(--text-color)
+* {
+    box-sizing: border-box;
 }
-main {
-    width: 80%;
-    margin: 10px;
+body{ 
+    background-color: #333;
+    color: #fff;
     text-align: center;
-}
-h1 {
-    margin: 5px 10px 5px 20px;
-    padding: 5px;
-}
-
-li {
-    list-style: none;
-    display: inline;
 }
 header {
-    background-color: var(--secondary-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    color: var(--main-color);
+    background-color: var(--highlight-color);
+    margin-bottom: 15px;
+    padding: 20px;
 }
-a {
-    color: var(--text-color);
+h1 {
+    margin: 25px;
+}
+li {
+    display:inline-flex;
+    padding: 5px 20px 5px 20px;
+}
+a{
     text-decoration: none;
 }
-nav {
-    clear: both;
-    float: right;
-}
-nav a {
-    color: var(--main-color);
-    padding: 25px;
-}
-nav a:hover {
-    background-color: dimgray;
-    color: #fff;
-}
-h3 {
-    font-size: 1.5em;
-    background-color: var(--secondary-color);
-    padding: 10px 20px 10px 20px;
-    margin: 5px;
+main {
+    padding-top: 100px;
 }
 section {
+    margin: 15px; 
     height: 100vh;
-    border-bottom: 1px solid #fff;
 }
-.section-head {
-    font-size: 2em;
-    margin: 5px;
-    float: left;
+.main-nav{
+    margin: 25px;
 }
-
+.hero {
+    width: 60%;
 }
-#work-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-#work-links h3 {
-    width: 100%;
-    text-align: center;
+#headshot{
+    width: 33%;
 }
 .preview {
-    width: 500px;
-    height: 250px;
-    margin: 0px 20px 20px 20px;
-    border: 1px solid white;
-}
-.preview:hover{
-    transform: scale(1.05);
-    box-shadow: 1px 1px 5px 5px rgba(255, 215, 0, 0.3);
-    transition: ease-in-out 300ms;
-}
-.portfolio {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-#contact {
-    clear: both;
-    text-align: center;
-    margin: 15px;
-}
-#contact li {
-    clear: both;
-    margin: 15px;
-
-}
-#contact a:hover {
-    color: var(--secondary-color);
-}
-footer {
-    background-color: var(--secondary-color);
-    text-align: center;
-    padding: 20px;
-    color: var(--main-color);    
+    width: 40%;
+    display: inline;
 }
