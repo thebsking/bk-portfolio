@@ -107,6 +107,7 @@ section {
 }
 .preview {
     width: 80%;
+    margin-top: 5px;
 }
 #resume ul {
     display: flex;
