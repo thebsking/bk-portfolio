@@ -22,8 +22,14 @@ body {
 h1 {
     font-size: 4em;
 }
+a {
+    color: var(--link-color)
+}
 section {
     padding-top: 150px;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 90vw;
+    margin: auto;
 }
 .clear {
     clear: both;
@@ -50,36 +56,124 @@ section {
     font-size: 2em;
     padding: 50px;
 }
+.main-nav a:hover {
+    color: var(--alt-dark);
+    background-color: var(--link-color);
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 10px var(--alt-color);
+
+}
 .section-header {
     background-color: var(--link-color);
     padding: 25px;
     float: left;
+    font-size: 2.5em;
+}
+#about-text {
+   padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
 }
 #about-text p {
-    
+   margin: 2em;
+}
+.card{
+    padding-top: 25px;
+}
+.card > * {
+    display: inline;
+}
+.preview-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.other-sites {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .hero {
     width: 80%;
+    margin: 15px;
 }
 .preview {
-    width: 40%;
+    width: 80%;
+}
+#resume ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#resume li {
+    font-size: 2em;
+}
+#resume article {
+    margin: 10px 10px 0 10px;
+    padding: 15px;
+}
+#resume h3 {
+    font-size: 2em;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 15px;
+    margin: 15px;
 }
 #contact ul {
     display: flex;
     justify-content: space-evenly;
+    padding: 20px 0;
 }
+
 i {
     color: var(--link-color);
     font-size: 30px;
     margin: 15px;
 }
+i:hover {
+    color: var(--alt-color);
+}
+i:hover::after {
+    content: attr(name);
+    position: absolute;
+    padding: 10px;
+    background-color: var(--alt-dark);
+    color: var(--alt-color)
+}
 footer {
-    height: 3em;
+    height: 4em;
     background-color: var(--alt-dark);
     padding: 20px;
 }
+footer h5 {
+    font-size: 20px;
+}
 @media screen and (min-width:768px){
     section {
-        padding-top: 325px;
+        padding-top: 250px;
     }
-}
+    .top-header {
+        clear:both;
+    }
+    .main-nav a {
+        padding: 15px 25px;
+    }
+    #headshot {
+        width: 15%; 
+    }
+    #about-text p {
+        font-size: 1.5em;
+    }
+    #work {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #work h3 {
+        font-size: 1.5em;
+    }
+   i {
+       font-size: 3em;
+   }
