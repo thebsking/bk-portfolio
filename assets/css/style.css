@@ -1,73 +1,85 @@
-:root{
-    --text-color: #e4e3d3;
-    --highlight-color: #6c6f7d;
-    --heading-color: #2e3138;
-    --link-color: #f3752b;
-}
 * {
     box-sizing: border-box;
 }
-body{
-    background-color: #031926;
+:root {
+    --alt-color: #cfdbd5;
+    --text-color: #e8eddf;
+    --link-color: #ca5310;
+    --alt-dark: #242423;
+    --background-color: #333533;
+}
+
+body {
     color: var(--text-color);
+    background-color: var(--background-color);
     text-align: center;
 }
-.site-header {
-    background-color: var(--highlight-color);   
+#site-header {
     position: fixed;
-    top: 0;
-    width: 100%;
-}
-main {
-    width: 90vw;
-    margin: 0 auto 0 auto;
-    background-color: #333;
+    height: fit-content;
+    background-color: var(--alt-dark);
 }
 h1 {
-    color: var(--heading-color);
-    margin-top: 1em;
+    font-size: 4em;
 }
-li {
-    display:inline-flex;
-    padding: 0px 20px 0px 20px;
-}
-a{
-    text-decoration: none;
-    color: var(--link-color);
-}
-
 section {
     padding-top: 150px;
-    height: 80vh;
 }
-.main-nav{
-    margin: 25px;
+.clear {
+    clear: both;
 }
-.section-header{
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 50px 0 50px 0;
-}
-.hero {
-    width: 100%;
-}
-#headshot{
-    width: 100%;
-}
-#about-text {
+.top-header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
     align-items: center;
 }
-#about-text p {
-
+#headshot {
+    width: 25%;
+    margin: 5px;
 }
- #work {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
- }  
+.main-nav {
+    clear: both;
+    display: inline-flex;
+    justify-content: space-evenly;
+    
+}    
+.main-nav a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 2em;
+    padding: 50px;
+}
+.section-header {
+    background-color: var(--link-color);
+    padding: 25px;
+    float: left;
+}
+#about-text p {
+    
+}
+.hero {
+    width: 80%;
+}
 .preview {
-    width: 50%;
+    width: 40%;
+}
+#contact ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+i {
+    color: var(--link-color);
+    font-size: 30px;
+    margin: 15px;
+}
+footer {
+    height: 3em;
+    background-color: var(--alt-dark);
+    padding: 20px;
+}
+@media screen and (min-width:768px){
+    section {
+        padding-top: 325px;
+    }
 }

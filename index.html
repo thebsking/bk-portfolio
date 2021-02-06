@@ -5,50 +5,57 @@
         <title>Brandon King's Web Portfolio</title>
         <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/style.css">
+        <script src="https://kit.fontawesome.com/0e3602565a.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header class="site-header">
-            <h1>Brandon King</h1>
+        <header id="site-header">
+            <div class="top-header">
+                <h1>Brandon King</h1>
+                <img src="assets/images/headshot-2.jpg" alt="brandon king headshot" id="headshot">
+            </div>
             <nav class="main-nav">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+                    <a href="#about">About</a>
+                    <a href="#work">Work</a>
+                    <a href="#resume">Resume</a>
+                    <a href="#contact">Contact</a>
             </nav>
         </header>
         <main>
             <section id="about">
                 <header class="section-header">Who I Am</header>
-                <article id="about-text">
-                    <img src="assets/images/headshot-2.jpg" alt="brandon king headshot" id="headshot">
+                <article id="about-text" class="clear">
                     <p>Hello there! My name is Brandon, and I am pursuing a career in full stack web development. I have a long history in the customer service industry and am currently working as a systems administrator for a local nonprofit. </p>
                     <p>I have put together this page to showcase the web applications I am creating on my journey.</p>
                 </article>
             </section>
             <section id="work">
                 <header class="section-header">What I've Made</header>
-                <h3>Big Brothers Big Sisters of Central Ohio</h3>
-                <a href="https://bbbscentralohio.org" target="_blank"><img src="assets/images/bbbs.png" alt="bbbs website" class="hero"></a>
-                <h3>Coming Soon</h3>
-                <img src="https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png" alt="placeholder image" class="preview" id="preview1">
-                <h3>Coming Soon</h3>
-                <img src="https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png" alt="placeholder image" class="preview" id="preview2">
+                <div class="card clear">
+                    <h3>Big Brothers Big Sisters of Central Ohio</h3>
+                    <a href="https://bbbscentralohio.org" target="_blank"><img src="assets/images/bbbs.png" alt="bbbs website" class="hero"></a>
+                </div>
+                <div class="card clear">
+                    <h3>Coming Soon</h3>
+                    <img src="https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png" alt="placeholder image" class="preview" id="preview1">
+                </div>
+                <div class="card clear">
+                    <h3>Coming Soon</h3>
+                    <img src="https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png" alt="placeholder image" class="preview" id="preview2">
+                </div>
             </section>
             <section id="resume">
                 <header class="section-header">How I Got Here</header>
-                    <article>
+                    <article class="clear">
                         <h3>Skills</h3>
                         PLACEHOLDER
                     </article>
-                    <article id="Education">
+                    <article class="clear" id="Education">
                         <h3>Education</h3>
                         <h4>The Ohio State University</h4>
                         <p>B.A. Commnunication - 2009</p>
                         <p>Coding Bootcamp - 2021</p>
                 </article>
-                <article id="jobs">
+                <article class="clear" id="jobs">
                 <h3>Experience</h3>
                 <h4>Big Brothers Big Sisters of Central Ohio</h4>
                 <p>2017 - Present</p>
@@ -57,13 +64,16 @@
             </section>
             <section id="contact">
                 <header class="section-header">Where to Find Me</header>
-                <ul>
-                    <li><a href="tel:6145633108">phone </a></li>
-                    <li><a href="mailto:brandonscottking@gmail.com">email </a></li>
-                    <li><a href="https://github.com/thebsking">github</a> </li>
-                    <li><a href="https://linkedin.com/in/brandonsking">Linkedin</a> </li>
+                <ul class="clear">
+                    <li><a href="tel:6145633108"><i class="fas fa-mobile"></i> </a></li>
+                    <li><a href="mailto:brandonscottking@gmail.com"><i class="far fa-envelope"></i> </a></li>
+                    <li><a href="https://github.com/thebsking"><i class="fab fa-github"></i></a> </li>
+                    <li><a href="https://linkedin.com/in/brandonsking"><i class="fab fa-linkedin-in"></i></a> </li>
                 </ul>
             </section>
+            <footer>
+                <h5>Created by BK &copy; 2021</h5>
+            </footer>
         </main>
     </body>
 </html>
