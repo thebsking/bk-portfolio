@@ -17,6 +17,7 @@ body {
 #site-header {
     position: fixed;
     height: fit-content;
+    width: 100vw;
     background-color: var(--alt-dark);
 }
 h1 {
@@ -82,9 +83,13 @@ section {
 .card{
     padding-top: 25px;
 }
-.card > * {
+/* .card > * {
     display: inline;
+} */
+.hero:hover, .preview:hover {
+    box-shadow:  0px 0px 10px var(--alt-color);
 }
+
 .preview-container {
     display: flex;
     flex-wrap: wrap;
@@ -151,19 +156,21 @@ footer {
 footer h5 {
     font-size: 20px;
 }
-@media screen and (min-width:768px){
+@media screen and (max-width:767px) {
     section {
-        padding-top: 250px;
+        padding-top: 175px;
     }
-    .top-header {
-        clear:both;
+    h1 {
+        font-size: 2em;
     }
     .main-nav a {
         padding: 15px 25px;
+        font-size: 1em;
     }
     #headshot {
         width: 15%; 
     }
+ 
     #about-text p {
         font-size: 1.5em;
     }
@@ -177,3 +184,32 @@ footer h5 {
    i {
        font-size: 3em;
    }
+}
+@media screen and (min-width:768px){
+    section {
+        padding-top: 250px;
+    }
+    .top-header {
+        clear:both;
+    }
+    .main-nav a {
+        padding: 15px 25px;
+    }
+    #headshot {
+        width: 15%; 
+    }
+ 
+    #about-text p {
+        font-size: 1.5em;
+    }
+    #work {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #work h3 {
+        font-size: 1.5em;
+    }
+   i {
+       font-size: 3em;
+   }
+}
