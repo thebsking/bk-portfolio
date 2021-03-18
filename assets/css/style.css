@@ -1,16 +1,35 @@
-.navbar {
-    background-color: #333;
-}
+
 .navbar-item {
     color: red;
     font-size: 1.5em;
+    margin: 0 5px;
+    
 }
-.navbar-burger span {
+
+.navbar-burger  span{
     color: red;
-    margin-bottom: 5px;
+    line-height: 2em;
 }
 #welcome{
-    height: 90vh;
+    height: 100vh;
     background-image: url('../../assets/images/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg');
     background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#logo {
+    width: 240px;
+    height: 88.8px;
+    margin: 10px;
+}
+#about {
+    height: 100vh;;
+}
+footer {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
 }
