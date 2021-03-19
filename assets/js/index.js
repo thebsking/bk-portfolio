@@ -39,7 +39,7 @@ for (let x = 1; x < cards.length; x++) {
   $(cards[x]).css('width', '40%')
 }
 
-//cards click event
+//cards click events
 for (let z = 0; z < cards.length; z++) {
   $(cards[z]).on('click', (event) => {
     event.preventDefault();
