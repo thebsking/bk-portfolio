@@ -14,10 +14,21 @@ $(document).ready(function() {
 
 });
 
+//add section headers
 const sections = document.querySelectorAll('section')
 for (let i =0; i < sections.length; i++) {
   let header = document.createElement('h2')
   header.classList.add('section-header');
   header.textContent = (sections[i].id).toUpperCase();
   sections[i].insertBefore(header, sections[i].firstChild)
+}
+
+//style contact icons
+const iconSpans = $('.icon')
+for (let i=0; i < iconSpans.length; i++){
+  $(iconSpans[i]).addClass('is-large')
+}
+const iconImage = $('i');
+for (let j=0; j < iconImage.length; j++){
+  $(iconImage[j]).addClass('fa-3x')
 }
