@@ -32,3 +32,9 @@ const iconImage = $('i');
 for (let j=0; j < iconImage.length; j++){
   $(iconImage[j]).addClass('fa-3x')
 }
+
+//resize cards AFTER the 1st one
+let cards = $('.card');
+for (let x = 1; x < cards.length; x++) {
+  $(cards[x]).css('width', '40%')
+}
