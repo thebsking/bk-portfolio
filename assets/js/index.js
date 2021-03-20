@@ -46,3 +46,14 @@ for (let z = 0; z < cards.length; z++) {
     window.open(`https://thebsking.github.io/${$(cards[z]).attr('id')}`)
   })
 }
+
+//smooth scrolling function for #links
+// $('a[href*="#"]').on('click', (event) => {
+//   event.preventDefault();
+//   $('html, body').animate({
+//     scrollTop: $($(this).attr('href')).offset().top,
+//   }, 500, 'linear')
+// })
+
+
+//media query changes

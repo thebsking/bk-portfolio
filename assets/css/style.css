@@ -1,9 +1,26 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: #333;
     font-family: 'Lato', sans-serif;
 }
 h1, h2, h3, h4, a {
     font-family: 'Fjalla One', sans-serif;
+}
+#about-me {
+    margin: auto;
+    font-size: 1.5em;
+    width: 60%;
+    height: 80%;
+    color: #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+.navbar-end {
+    margin-right: 10px; 
 }
 .navbar-item {
     color: red;
@@ -49,7 +66,7 @@ a.navbar-item:hover {
 }
 footer {
     margin-top: 15px;
-    background-color: #333;
+    background-color: #000;
     color: white;
     display: flex;
     justify-content: space-evenly;
@@ -60,11 +77,12 @@ footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
+    background-color: black;
 }
 .card {
     width: 80%;
     margin: 15px;
+    box-shadow: 0px 5px 10px rgba(255,255,255,0.8);
 }
 .section-header {
     font-size: 2em;
