@@ -5,8 +5,21 @@ This repository houses my professional portfolio.
 
 It is a constant work in progress! So do not be suprised if it looks different on your next visit. 
 
-## Link to deployed project
-https://thebsking.github.io/bk-portfolio/
+## Technologies Used
+`HTML, CSS, JavaScript, Bulma CSS Framework, JQuery`
+
+## Links
+
+### [Deployed Application](https://thebsking.github.io/portfolio)
+### [Repository](https://github.com/thebsking/portfolio)
 
 ## Preview
-![project screen shot](./assets/preview.png)
+
+![project screen shot](./assets/screenshot1.png)
+![project screen shot](./assets/screenshot2.png)
+
+## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
+## Contact
+brandonscottking@gmail.com
