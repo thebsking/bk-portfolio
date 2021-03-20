@@ -64,6 +64,7 @@ $('.button').on('click', ()=>{
 })
 
 //experimenting with typerwriter effect
+//inspiration taken from https://speckyboy.com/css-javascript-text-animation-snippets/
 const typewriter = function(element, rotate, period) {
   this.rotate = rotate;
   this.element = element;
