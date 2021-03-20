@@ -8,6 +8,13 @@ body {
 h1, h2, h3, h4, a {
     font-family: 'Fjalla One', sans-serif;
 }
+#coming-soon {
+    padding: 10px;
+    background-color: black;
+    font-size: 2em;
+    margin-top: 30%;
+    text-align: center;
+}
 #about-me {
     margin: auto;
     font-size: 1.5em;
@@ -18,6 +25,9 @@ h1, h2, h3, h4, a {
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
+}
+.navbar {
+    border-bottom: 1px solid black;
 }
 .navbar-end {
     margin-right: 10px; 
@@ -114,4 +124,7 @@ i:hover::after {
     content: attr(id);
     position: absolute;
     transform: translate3d(-50px, 50px, 0);
+}
+.card-header, .card-content {
+    border: 1px solid black;
 }

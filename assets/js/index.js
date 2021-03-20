@@ -25,35 +25,35 @@ for (let i = 0; i < sections.length; i++) {
 
 //style contact icons
 const iconSpans = $('.icon')
-for (let i = 0; i < iconSpans.length; i++) {
-  $(iconSpans[i]).addClass('is-large')
+for (const span of iconSpans) {
+  $(span).addClass('is-large')
 }
 const iconImage = $('i');
-for (let j = 0; j < iconImage.length; j++) {
-  $(iconImage[j]).addClass('fa-3x')
+for (const icon of iconImage) {
+  $(icon).addClass('fa-3x')
 }
 
-//resize cards AFTER the 1st one
-let cards = $('.card');
-for (let x = 1; x < cards.length; x++) {
-  $(cards[x]).css('width', '40%')
-}
-
+const cards = $('.card');
 //cards click events
-for (let z = 0; z < cards.length; z++) {
-  $(cards[z]).on('click', (event) => {
+for (const childCard of cards) {
+  $(childCard).on('click', (event) => {
     event.preventDefault();
-    window.open(`https://thebsking.github.io/${$(cards[z]).attr('id')}`)
+    window.open(`https://thebsking.github.io/${$(childCard).attr('id')}`)
   })
 }
 
-//smooth scrolling function for #links
-// $('a[href*="#"]').on('click', (event) => {
-//   event.preventDefault();
-//   $('html, body').animate({
-//     scrollTop: $($(this).attr('href')).offset().top,
-//   }, 500, 'linear')
-// })
-
 
 //media query changes
+const mediaQuery = (screen) => {
+  if(screen.matches) {
+    cards.css('width', '75%');
+  } else {
+    //resize cards AFTER the 1st one
+    for (let x = 1; x < cards.length; x++) {
+    $(cards[x]).css('width', '40%')
+}
+
+  }
+}
+const smallScreen = window.matchMedia("(max-width:700px)")
+mediaQuery(smallScreen)
