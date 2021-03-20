@@ -124,6 +124,9 @@ footer {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+#my-info p {
+    font-size: small;
+}
 i, a {
   color: red;  
 }

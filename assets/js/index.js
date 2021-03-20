@@ -57,4 +57,3 @@ $('a[href="#resume"]').on('click', (event) => {
 $('.delete').on('click', ()=>{
   $('.modal').toggleClass('is-active')
 })
-
