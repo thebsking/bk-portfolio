@@ -136,7 +136,13 @@ i:hover::after {
     height: 100%;
     text-align: center;
 }
-
+#headshot {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    align-self: center;
+    transform: rotate(-25deg);
+}
 .modal-card-header {
     padding: 10px;
     display: flex;
