@@ -10,7 +10,15 @@ h1, h2, h3, h4, a {
     font-size: 1.5em;
     margin: 0 5px;   
 }
-
+a.navbar-item:hover {
+    background-color:rgba(0,0,0,0.3);
+    color: #ccc;
+    transition-timing-function: ease-in-out;
+    transition: color 1800ms, background-color 1800ms;
+}
+#navbar-mobile {
+    background-color: #333;
+}
 .navbar-burger {
     transform: scale(2,2);
     margin-top: 10px;
@@ -71,4 +79,21 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+i, a {
+  color: red;  
+}
+a:hover {
+    color: #ccc;
+}
+i:hover {
+    color: #ccc;
+}
+i:hover::after {
+    color: black;
+    font-size: .5em;
+    background-color: red;
+    content: attr(id);
+    position: absolute;
+    transform: translate3d(-50px, 50px, 0);
 }
