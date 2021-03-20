@@ -128,3 +128,12 @@ i:hover::after {
 .card-header, .card-content {
     border: 1px solid black;
 }
+
+@media screen and (min-width:700px) {
+    .card:nth-of-type(2) {
+        width: 40%;
+    }
+     .card:nth-of-type(3) {
+         width: 40%
+     }
+}

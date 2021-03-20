@@ -44,16 +44,16 @@ for (const childCard of cards) {
 
 
 //media query changes
-const mediaQuery = (screen) => {
-  if(screen.matches) {
-    cards.css('width', '75%');
-  } else {
-    //resize cards AFTER the 1st one
-    for (let x = 1; x < cards.length; x++) {
-    $(cards[x]).css('width', '40%')
-}
+// const mediaQuery = (screen) => {
+//   if(screen.matches) {
+//     cards.css('width', '75%');
+//   } else {
+//     //resize cards AFTER the 1st one
+//     for (let x = 1; x < cards.length; x++) {
+//     $(cards[x]).css('width', '40%')
+// }
 
-  }
-}
-const smallScreen = window.matchMedia("(max-width:700px)")
-mediaQuery(smallScreen)
+//   }
+// }
+// const smallScreen = window.matchMedia("(max-width:700px)")
+// mediaQuery(smallScreen)
