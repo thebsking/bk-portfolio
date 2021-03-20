@@ -57,3 +57,8 @@ $('a[href="#resume"]').on('click', (event) => {
 $('.delete').on('click', ()=>{
   $('.modal').toggleClass('is-active')
 })
+
+//resume click event
+$('.button').on('click', ()=>{
+  window.open('https://docs.google.com/document/d/1nUsxrHn9PZ-BwllVZIf3E_WzUYsq3fumdbjhvhNSQvY/edit?usp=sharing')
+})

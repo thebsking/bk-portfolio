@@ -74,7 +74,7 @@ a.navbar-item:hover {
 #about {
     height: 100vh;;
 }
-footer {
+#site-footer {
     margin-top: 15px;
     background-color: #000;
     color: white;
@@ -161,16 +161,22 @@ i:hover::after {
 }
 .modal-card-header {
     padding: 10px;
+    border-radius: 5px;
     display: flex;
     justify-content: space-between;
     background-color: #333;
 }
-.modal-card-body, .modal-card-header {
+.modal-card-body, .modal-card-header, .modal-card-foot {
     width: 80%;
     align-self: center;
 }
 .modal-card-title {
     color: red;
+}
+#resume-btn {
+    background-color:red;
+    color: #333;
+    margin: auto;
 }
 
 @media screen and (min-width:700px) {
