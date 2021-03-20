@@ -1,9 +1,9 @@
 # Brandon King's Professional Portfolio
 
 ## Description
-This repository houses my professional portfolio.
+*Welcome to my web development portfolio!*
 
-It is a constant work in progress! So do not be suprised if it looks different on your next visit. 
+I am currently enrolled in a Full Stack Coding Bootcamp (expected graduation July 2021). I will be regularly updating this repository/application to show of the new technologies I continue to learn. 
 
 ## Technologies Used
 `HTML, CSS, JavaScript, Bulma CSS Framework, JQuery`
