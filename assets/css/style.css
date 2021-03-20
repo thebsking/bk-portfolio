@@ -187,3 +187,8 @@ i:hover::after {
          width: 40%
      }
 }
+
+/* Experimenting with typewriter script */
+.txt-rotate > .wrap {
+    border-right: 0.08em solid  #333;
+}

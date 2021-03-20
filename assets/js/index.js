@@ -62,3 +62,53 @@ $('.delete').on('click', ()=>{
 $('.button').on('click', ()=>{
   window.open('https://docs.google.com/document/d/1nUsxrHn9PZ-BwllVZIf3E_WzUYsq3fumdbjhvhNSQvY/edit?usp=sharing')
 })
+
+//experimenting with typerwriter effect
+const typewriter = function(element, rotate, period) {
+  this.rotate = rotate;
+  this.element = element;
+  this.loopNum = 0
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = ''
+  this.tick();
+  this.isDeleting = false;
+};
+typewriter.prototype.tick = function() {
+  let i = this.loopNum % this.rotate.length;
+  let fullText = this.rotate[i];
+  if (this.isDeleting) {
+    this.txt = fullText.substring(0, this.txt.length -1);
+  } else {
+    this.txt = fullText.substring(0, this.txt.length + 1);
+  }
+  this.element.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  let that = this;
+  let delta = 300 - Math.random() * 100;
+
+  if(this.isDeleting) {
+    delta /= 2;
+  }
+  if (!this.isDeleting && this.txt === fullText) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++
+    delta = 500;
+  }
+  setTimeout(()=>{
+    that.tick();
+  }, delta);
+};
+
+window.onload = ()=> {
+  let elements = $('.text-rotate');
+  for (let i = 0; i < elements.length; i++) {
+    let rotate = elements[i].getAttribute('data-rotate');
+    let period = elements[i].getAttribute('data-period');
+    if (rotate) {
+      new typewriter(elements[i], JSON.parse(rotate), period);
+    }
+  }
+};
