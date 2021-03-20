@@ -92,7 +92,10 @@ footer {
 .card {
     width: 80%;
     margin: 15px;
-    box-shadow: 0px 5px 10px rgba(255,255,255,0.8);
+}
+.card:hover {
+    border: 1px solid red;
+    
 }
 .section-header {
     font-size: 2em;
@@ -125,8 +128,23 @@ i:hover::after {
     position: absolute;
     transform: translate3d(-50px, 50px, 0);
 }
-.card-header, .card-content {
+.card-header, .card-content, .card-image {
     border: 1px solid black;
+}
+.card-content{
+    height: 100%;
+    text-align: center;
+}
+
+.modal-card-header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+}
+
+.modal-card-title {
+    color: red;
 }
 
 @media screen and (min-width:700px) {

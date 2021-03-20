@@ -48,3 +48,12 @@ for (const childCard of cards) {
     window.open(`https://thebsking.github.io/${$(childCard).attr('id')}`)
   })
 }
+
+//click event modal for resume download
+$('a[href="#resume"]').on('click', (event) => {
+  event.preventDefault();
+  $('.modal').toggleClass('is-active')
+})
+$('.delete').on('click', ()=>{
+  $('.modal').toggleClass('is-active')
+})
