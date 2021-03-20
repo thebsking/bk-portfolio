@@ -1,6 +1,6 @@
 
 
-//mobile menu event listener
+//mobile menu event listener - function from bulma docs
 $(document).ready(function () {
 
   // Check for click events on the navbar burger icon
@@ -13,6 +13,13 @@ $(document).ready(function () {
   });
 
 });
+
+//close mobile menu on list item click
+$('.navbar-item').on('click', ()=>{
+    $(".navbar-burger").toggleClass("is-active");
+    $(".navbar-menu").toggleClass("is-active");
+
+})
 
 //add section headers
 const sections = document.querySelectorAll('section')
@@ -41,19 +48,3 @@ for (const childCard of cards) {
     window.open(`https://thebsking.github.io/${$(childCard).attr('id')}`)
   })
 }
-
-
-//media query changes
-// const mediaQuery = (screen) => {
-//   if(screen.matches) {
-//     cards.css('width', '75%');
-//   } else {
-//     //resize cards AFTER the 1st one
-//     for (let x = 1; x < cards.length; x++) {
-//     $(cards[x]).css('width', '40%')
-// }
-
-//   }
-// }
-// const smallScreen = window.matchMedia("(max-width:700px)")
-// mediaQuery(smallScreen)
