@@ -183,7 +183,9 @@ i:hover::after {
 }
 
 @media screen and (min-width:768px) {
-    
+    #about-me {
+        font-size: 2em;
+    }
     .card:nth-of-type(2) {
         width: 40%;
     }
