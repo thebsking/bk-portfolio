@@ -45,7 +45,7 @@ const cards = $('.card');
 for (const childCard of cards) {
   $(childCard).on('click', (event) => {
     event.preventDefault();
-    window.open(`https://thebsking.github.io/${$(childCard).attr('id')}`)
+    window.open(`https://github.com/thebsking/${$(childCard).attr('id')}`)
   })
 }
 

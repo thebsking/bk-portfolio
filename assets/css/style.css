@@ -93,7 +93,7 @@ a.navbar-item:hover {
     background-color: black;
 }
 .card {
-    width: 90%;
+    width: 45%;
     margin: 15px;
 }
 
@@ -182,16 +182,13 @@ i:hover::after {
     margin: auto;
 }
 
-@media screen and (min-width:768px) {
+@media only screen and (max-width: 768px) {
     #about-me {
         font-size: 2em;
     }
-    .card:nth-of-type(2) {
-        width: 40%;
+    .card {
+        width: 80%;
     }
-     .card:nth-of-type(3) {
-         width: 40%
-     }
 }
 
 /* Experimenting with typewriter script */
