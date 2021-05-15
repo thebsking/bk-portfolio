@@ -48,6 +48,11 @@ for (const childCard of cards) {
     window.open(`https://github.com/thebsking/${$(childCard).attr('id')}`)
   })
 }
+//cards resize
+if (window.screen.width < 768) {
+  cards.css('width', '80%')
+}
+
 
 //click event modal for resume download
 $('a[href="#resume"]').on('click', (event) => {

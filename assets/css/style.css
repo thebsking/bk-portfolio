@@ -186,9 +186,6 @@ i:hover::after {
 }
 
 @media only screen and (max-width: 768px) {
-    #about-me {
-        font-size: 2em;
-    }
     .card {
         width: 80%;
     }
