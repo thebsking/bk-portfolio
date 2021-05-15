@@ -50,7 +50,7 @@ for (const childCard of cards) {
 }
 //cards resize
 if (window.screen.width < 768) {
-  cards.css('width', '80%')
+  cards.css('width', '100%')
 }
 
 
@@ -65,7 +65,7 @@ $('.delete').on('click', ()=>{
 
 //resume click event
 $('.button').on('click', ()=>{
-  window.open('https://docs.google.com/document/d/1nUsxrHn9PZ-BwllVZIf3E_WzUYsq3fumdbjhvhNSQvY/edit?usp=sharing')
+  window.open('./assets/images/bk-resume.pdf')
 })
 
 //experimenting with typerwriter effect

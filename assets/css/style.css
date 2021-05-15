@@ -105,16 +105,17 @@ a.navbar-item:hover {
     
 }
 .card:hover::after {
-    content: 'Click to visit';
+    content: 'Click to view project repository';
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(33,33,33,0.8);
+    background-color: rgba(33,33,33,0.9);
     color: red;
     line-height: 250px;
     text-align: center;
     font-size: 2em;
+    padding-top: 25px;
 } 
 .section-header {
     font-size: 2em;
@@ -175,6 +176,7 @@ i:hover::after {
 .modal-card-body, .modal-card-header, .modal-card-foot {
     width: 80%;
     align-self: center;
+    text-align: center;
 }
 .modal-card-title {
     color: red;
